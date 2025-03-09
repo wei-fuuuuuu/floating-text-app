@@ -1,0 +1,182 @@
+2025-03-08 21:33:50.683 25642-25642 Process                 com.example.ft                       I  Sending signal. PID: 25642 SIG: 9
+2025-03-08 21:33:52.038 25710-25710 ziparchive              com.example.ft                       W  Unable to open '/data/data/com.example.ft/code_cache/.overlay/base.apk/classes3.dm': No such file or directory
+2025-03-08 21:33:52.039 25710-25710 ziparchive              com.example.ft                       W  Unable to open '/data/app/~~NLBP-FKkW0BmL3NEr47bPw==/com.example.ft-PiCnzt2Si4rc-q1N04nq3w==/base.dm': No such file or directory
+2025-03-08 21:33:52.039 25710-25710 ziparchive              com.example.ft                       W  Unable to open '/data/app/~~NLBP-FKkW0BmL3NEr47bPw==/com.example.ft-PiCnzt2Si4rc-q1N04nq3w==/base.dm': No such file or directory
+2025-03-08 21:33:52.374 25710-25710 nativeloader            com.example.ft                       D  Configuring clns-6 for other apk /data/app/~~NLBP-FKkW0BmL3NEr47bPw==/com.example.ft-PiCnzt2Si4rc-q1N04nq3w==/base.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~NLBP-FKkW0BmL3NEr47bPw==/com.example.ft-PiCnzt2Si4rc-q1N04nq3w==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.ft
+2025-03-08 21:33:52.397 25710-25710 GraphicsEnvironment     com.example.ft                       V  Currently set values for:
+2025-03-08 21:33:52.397 25710-25710 GraphicsEnvironment     com.example.ft                       V    angle_gl_driver_selection_pkgs=[]
+2025-03-08 21:33:52.397 25710-25710 GraphicsEnvironment     com.example.ft                       V    angle_gl_driver_selection_values=[]
+2025-03-08 21:33:52.397 25710-25710 GraphicsEnvironment     com.example.ft                       V  ANGLE GameManagerService for com.example.ft: false
+2025-03-08 21:33:52.397 25710-25710 GraphicsEnvironment     com.example.ft                       V  com.example.ft is not listed in per-application setting
+2025-03-08 21:33:52.397 25710-25710 GraphicsEnvironment     com.example.ft                       V  Neither updatable production driver nor prerelease driver is supported.
+2025-03-08 21:33:52.535 25710-25710 AndroidRuntime          com.example.ft                       D  Shutting down VM
+2025-03-08 21:33:52.539 25710-25710 AndroidRuntime          com.example.ft                       E  FATAL EXCEPTION: main
+                                                                                                    Process: com.example.ft, PID: 25710
+                                                                                                    java.lang.RuntimeException: Unable to create service com.example.ft.FloatingTextService: java.lang.SecurityException: Starting FGS with type systemExempted callerApp=ProcessRecord{18ba588 25710:com.example.ft/u0a190} targetSDK=34 requires permissions: all of the permissions allOf=true [android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED] any of the permissions allOf=false [android.permission.SCHEDULE_EXACT_ALARM, android.permission.USE_EXACT_ALARM, android:activate_vpn] 
+                                                                                                    	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4664)
+                                                                                                    	at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0)
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2264)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:106)
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:205)
+                                                                                                    	at android.os.Looper.loop(Looper.java:294)
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:8177)
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method)
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+                                                                                                    Caused by: java.lang.SecurityException: Starting FGS with type systemExempted callerApp=ProcessRecord{18ba588 25710:com.example.ft/u0a190} targetSDK=34 requires permissions: all of the permissions allOf=true [android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED] any of the permissions allOf=false [android.permission.SCHEDULE_EXACT_ALARM, android.permission.USE_EXACT_ALARM, android:activate_vpn] 
+                                                                                                    	at android.os.Parcel.createExceptionOrNull(Parcel.java:3057)
+                                                                                                    	at android.os.Parcel.createException(Parcel.java:3041)
+                                                                                                    	at android.os.Parcel.readException(Parcel.java:3024)
+                                                                                                    	at android.os.Parcel.readException(Parcel.java:2966)
+                                                                                                    	at android.app.IActivityManager$Stub$Proxy.setServiceForeground(IActivityManager.java:6761)
+                                                                                                    	at android.app.Service.startForeground(Service.java:862)
+                                                                                                    	at com.example.ft.FloatingTextService.onCreate(FloatingTextService.java:85)
+                                                                                                    	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4651)
+                                                                                                    	at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0) 
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2264) 
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:106) 
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:205) 
+                                                                                                    	at android.os.Looper.loop(Looper.java:294) 
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:8177) 
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method) 
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552) 
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971) 
+                                                                                                    Caused by: android.os.RemoteException: Remote stack trace:
+                                                                                                    	at com.android.server.am.ActiveServices.validateForegroundServiceType(ActiveServices.java:2611)
+                                                                                                    	at com.android.server.am.ActiveServices.setServiceForegroundInnerLocked(ActiveServices.java:2322)
+                                                                                                    	at com.android.server.am.ActiveServices.setServiceForegroundLocked(ActiveServices.java:1679)
+                                                                                                    	at com.android.server.am.ActivityManagerService.setServiceForeground(ActivityManagerService.java:13281)
+                                                                                                    	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:3385)
+2025-03-08 21:33:56.072 25765-25765 re-initialized>         com.example.ft                       W  type=1400 audit(0.0:361): avc:  granted  { execute } for  path="/data/data/com.example.ft/code_cache/startup_agents/64e88b6d-agent.so" dev="dm-40" ino=319916 scontext=u:r:untrusted_app:s0:c190,c256,c512,c768 tcontext=u:object_r:app_data_file:s0:c190,c256,c512,c768 tclass=file app=com.example.ft
+2025-03-08 21:33:56.086 25765-25765 com.example.ft          com.example.ft                       W  DexFile /data/data/com.example.ft/code_cache/.studio/instruments-3e42f015.jar is in boot class path but is not in a known location
+2025-03-08 21:33:56.167 25765-25765 com.example.ft          com.example.ft                       W  Redefining intrinsic method java.lang.Thread java.lang.Thread.currentThread(). This may cause the unexpected use of the original definition of java.lang.Thread java.lang.Thread.currentThread()in methods that have already been compiled.
+2025-03-08 21:33:56.167 25765-25765 com.example.ft          com.example.ft                       W  Redefining intrinsic method boolean java.lang.Thread.interrupted(). This may cause the unexpected use of the original definition of boolean java.lang.Thread.interrupted()in methods that have already been compiled.
+2025-03-08 21:33:56.172 25765-25765 Compatibil...geReporter com.example.ft                       D  Compat change id reported: 171979766; UID 10190; state: ENABLED
+2025-03-08 21:33:56.174 25765-25765 Compatibil...geReporter com.example.ft                       D  Compat change id reported: 242716250; UID 10190; state: ENABLED
+2025-03-08 21:33:56.228 25765-25765 ziparchive              com.example.ft                       W  Unable to open '/data/data/com.example.ft/code_cache/.overlay/base.apk/classes3.dm': No such file or directory
+2025-03-08 21:33:56.230 25765-25765 ziparchive              com.example.ft                       W  Unable to open '/data/app/~~NLBP-FKkW0BmL3NEr47bPw==/com.example.ft-PiCnzt2Si4rc-q1N04nq3w==/base.dm': No such file or directory
+2025-03-08 21:33:56.230 25765-25765 ziparchive              com.example.ft                       W  Unable to open '/data/app/~~NLBP-FKkW0BmL3NEr47bPw==/com.example.ft-PiCnzt2Si4rc-q1N04nq3w==/base.dm': No such file or directory
+2025-03-08 21:33:56.596 25765-25765 nativeloader            com.example.ft                       D  Configuring clns-6 for other apk /data/app/~~NLBP-FKkW0BmL3NEr47bPw==/com.example.ft-PiCnzt2Si4rc-q1N04nq3w==/base.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~NLBP-FKkW0BmL3NEr47bPw==/com.example.ft-PiCnzt2Si4rc-q1N04nq3w==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.ft
+2025-03-08 21:33:56.644 25765-25765 GraphicsEnvironment     com.example.ft                       V  Currently set values for:
+2025-03-08 21:33:56.644 25765-25765 GraphicsEnvironment     com.example.ft                       V    angle_gl_driver_selection_pkgs=[]
+2025-03-08 21:33:56.645 25765-25765 GraphicsEnvironment     com.example.ft                       V    angle_gl_driver_selection_values=[]
+2025-03-08 21:33:56.647 25765-25765 GraphicsEnvironment     com.example.ft                       V  ANGLE GameManagerService for com.example.ft: false
+2025-03-08 21:33:56.647 25765-25765 GraphicsEnvironment     com.example.ft                       V  com.example.ft is not listed in per-application setting
+2025-03-08 21:33:56.648 25765-25765 GraphicsEnvironment     com.example.ft                       V  Neither updatable production driver nor prerelease driver is supported.
+2025-03-08 21:33:56.803 25765-25786 libEGL                  com.example.ft                       D  loaded /vendor/lib64/egl/libEGL_emulation.so
+2025-03-08 21:33:56.815 25765-25786 libEGL                  com.example.ft                       D  loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+2025-03-08 21:33:56.822 25765-25786 libEGL                  com.example.ft                       D  loaded /vendor/lib64/egl/libGLESv2_emulation.so
+2025-03-08 21:33:57.009 25765-25765 AppCompatDelegate       com.example.ft                       D  Checking for metadata for AppLocalesMetadataHolderService : Service not found
+2025-03-08 21:33:57.199 25765-25765 com.example.ft          com.example.ft                       W  Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (unsupported, reflection, allowed)
+2025-03-08 21:33:57.200 25765-25765 com.example.ft          com.example.ft                       W  Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+2025-03-08 21:33:57.229 25765-25765 Compatibil...geReporter com.example.ft                       D  Compat change id reported: 210923482; UID 10190; state: ENABLED
+2025-03-08 21:33:57.554 25765-25765 Compatibil...geReporter com.example.ft                       D  Compat change id reported: 237531167; UID 10190; state: DISABLED
+2025-03-08 21:33:57.563 25765-25765 OpenGLRenderer          com.example.ft                       W  Unknown dataspace 0
+2025-03-08 21:33:57.585 25765-25765 Choreographer           com.example.ft                       I  Skipped 48 frames!  The application may be doing too much work on its main thread.
+2025-03-08 21:33:57.670 25765-25784 OpenGLRenderer          com.example.ft                       W  Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+2025-03-08 21:33:57.671 25765-25784 OpenGLRenderer          com.example.ft                       W  Failed to initialize 101010-2 format, error = EGL_SUCCESS
+2025-03-08 21:33:57.862 25765-25784 Gralloc4                com.example.ft                       I  mapper 4.x is not supported
+2025-03-08 21:33:57.959 25765-25784 OpenGLRenderer          com.example.ft                       E  Unable to match the desired swap behavior.
+2025-03-08 21:33:58.218 25765-25765 Choreographer           com.example.ft                       I  Skipped 36 frames!  The application may be doing too much work on its main thread.
+2025-03-08 21:33:58.241 25765-25781 OpenGLRenderer          com.example.ft                       I  Davey! duration=1422ms; Flags=1, FrameTimelineVsyncId=64276, IntendedVsync=10021774859030, Vsync=10022574858998, InputEventId=0, HandleInputStart=10022586781200, AnimationStart=10022586842800, PerformTraversalsStart=10022587349900, DrawStart=10022966132900, FrameDeadline=10021791525696, FrameInterval=10022585568100, FrameStartTime=16666666, SyncQueued=10022974571900, SyncStart=10023005854400, IssueDrawCommandsStart=10023020625900, SwapBuffers=10023207027500, FrameCompleted=10023228465400, DequeueBufferDuration=40000, QueueBufferDuration=1255100, GpuCompleted=10023228465400, SwapBuffersCompleted=10023210567600, DisplayPresentTime=16496969387776, CommandSubmissionCompleted=10023207027500, 
+2025-03-08 21:33:59.319 25765-25765 Compatibil...geReporter com.example.ft                       D  Compat change id reported: 163400105; UID 10190; state: ENABLED
+2025-03-08 21:33:59.322 25765-25765 ImeTracker              com.example.ft                       I  com.example.ft:1eb7ee4c: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+2025-03-08 21:33:59.327 25765-25765 InputMethodManager      com.example.ft                       D  showSoftInput() view=androidx.appcompat.widget.AppCompatEditText{19c3bbc VFED..CL. .F.P..ID 56,177-1384,345 #7f0800b0 app:id/edit_text aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+2025-03-08 21:33:59.351 25765-25784 EGL_emulation           com.example.ft                       D  app_time_stats: avg=122.65ms min=8.59ms max=768.84ms count=9
+2025-03-08 21:33:59.362 25765-25765 AssistStructure         com.example.ft                       I  Flattened final assist data: 1380 bytes, containing 1 windows, 7 views
+2025-03-08 21:33:59.715 25765-25765 InsetsController        com.example.ft                       D  show(ime(), fromIme=true)
+2025-03-08 21:34:00.013 25765-25765 ImeTracker              com.example.ft                       I  com.example.ft:1eb7ee4c: onShown
+2025-03-08 21:34:00.651 25765-25784 EGL_emulation           com.example.ft                       D  app_time_stats: avg=324.68ms min=52.18ms max=490.28ms count=4
+2025-03-08 21:34:01.659 25765-25784 EGL_emulation           com.example.ft                       D  app_time_stats: avg=201.28ms min=11.60ms max=523.02ms count=5
+2025-03-08 21:34:01.759 25765-25765 AndroidRuntime          com.example.ft                       D  Shutting down VM
+2025-03-08 21:34:01.767 25765-25765 AndroidRuntime          com.example.ft                       E  FATAL EXCEPTION: main
+                                                                                                    Process: com.example.ft, PID: 25765
+                                                                                                    java.lang.RuntimeException: Unable to create service com.example.ft.FloatingTextService: java.lang.SecurityException: Starting FGS with type systemExempted callerApp=ProcessRecord{db200ec 25765:com.example.ft/u0a190} targetSDK=34 requires permissions: all of the permissions allOf=true [android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED] any of the permissions allOf=false [android.permission.SCHEDULE_EXACT_ALARM, android.permission.USE_EXACT_ALARM, android:activate_vpn] 
+                                                                                                    	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4664)
+                                                                                                    	at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0)
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2264)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:106)
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:205)
+                                                                                                    	at android.os.Looper.loop(Looper.java:294)
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:8177)
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method)
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+                                                                                                    Caused by: java.lang.SecurityException: Starting FGS with type systemExempted callerApp=ProcessRecord{db200ec 25765:com.example.ft/u0a190} targetSDK=34 requires permissions: all of the permissions allOf=true [android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED] any of the permissions allOf=false [android.permission.SCHEDULE_EXACT_ALARM, android.permission.USE_EXACT_ALARM, android:activate_vpn] 
+                                                                                                    	at android.os.Parcel.createExceptionOrNull(Parcel.java:3057)
+                                                                                                    	at android.os.Parcel.createException(Parcel.java:3041)
+                                                                                                    	at android.os.Parcel.readException(Parcel.java:3024)
+                                                                                                    	at android.os.Parcel.readException(Parcel.java:2966)
+                                                                                                    	at android.app.IActivityManager$Stub$Proxy.setServiceForeground(IActivityManager.java:6761)
+                                                                                                    	at android.app.Service.startForeground(Service.java:862)
+                                                                                                    	at com.example.ft.FloatingTextService.onCreate(FloatingTextService.java:85)
+                                                                                                    	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4651)
+                                                                                                    	at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0) 
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2264) 
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:106) 
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:205) 
+                                                                                                    	at android.os.Looper.loop(Looper.java:294) 
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:8177) 
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method) 
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552) 
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971) 
+                                                                                                    Caused by: android.os.RemoteException: Remote stack trace:
+                                                                                                    	at com.android.server.am.ActiveServices.validateForegroundServiceType(ActiveServices.java:2611)
+                                                                                                    	at com.android.server.am.ActiveServices.setServiceForegroundInnerLocked(ActiveServices.java:2322)
+                                                                                                    	at com.android.server.am.ActiveServices.setServiceForegroundLocked(ActiveServices.java:1679)
+                                                                                                    	at com.android.server.am.ActivityManagerService.setServiceForeground(ActivityManagerService.java:13281)
+                                                                                                    	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:3385)
+2025-03-08 21:34:01.801 25765-25765 Process                 com.example.ft                       I  Sending signal. PID: 25765 SIG: 9
+2025-03-08 21:34:03.115 25841-25841 com.example.ft          com.example.ft                       W  Redefining intrinsic method java.lang.Thread java.lang.Thread.currentThread(). This may cause the unexpected use of the original definition of java.lang.Thread java.lang.Thread.currentThread()in methods that have already been compiled.
+2025-03-08 21:34:03.115 25841-25841 com.example.ft          com.example.ft                       W  Redefining intrinsic method boolean java.lang.Thread.interrupted(). This may cause the unexpected use of the original definition of boolean java.lang.Thread.interrupted()in methods that have already been compiled.
+2025-03-08 21:34:03.126 25841-25841 Compatibil...geReporter com.example.ft                       D  Compat change id reported: 171979766; UID 10190; state: ENABLED
+2025-03-08 21:34:03.126 25841-25841 Compatibil...geReporter com.example.ft                       D  Compat change id reported: 242716250; UID 10190; state: ENABLED
+2025-03-08 21:34:03.171 25841-25841 ziparchive              com.example.ft                       W  Unable to open '/data/data/com.example.ft/code_cache/.overlay/base.apk/classes3.dm': No such file or directory
+2025-03-08 21:34:03.173 25841-25841 ziparchive              com.example.ft                       W  Unable to open '/data/app/~~NLBP-FKkW0BmL3NEr47bPw==/com.example.ft-PiCnzt2Si4rc-q1N04nq3w==/base.dm': No such file or directory
+2025-03-08 21:34:03.173 25841-25841 ziparchive              com.example.ft                       W  Unable to open '/data/app/~~NLBP-FKkW0BmL3NEr47bPw==/com.example.ft-PiCnzt2Si4rc-q1N04nq3w==/base.dm': No such file or directory
+2025-03-08 21:34:03.498 25841-25841 nativeloader            com.example.ft                       D  Configuring clns-6 for other apk /data/app/~~NLBP-FKkW0BmL3NEr47bPw==/com.example.ft-PiCnzt2Si4rc-q1N04nq3w==/base.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~NLBP-FKkW0BmL3NEr47bPw==/com.example.ft-PiCnzt2Si4rc-q1N04nq3w==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.example.ft
+2025-03-08 21:34:03.545 25841-25841 GraphicsEnvironment     com.example.ft                       V  Currently set values for:
+2025-03-08 21:34:03.545 25841-25841 GraphicsEnvironment     com.example.ft                       V    angle_gl_driver_selection_pkgs=[]
+2025-03-08 21:34:03.545 25841-25841 GraphicsEnvironment     com.example.ft                       V    angle_gl_driver_selection_values=[]
+2025-03-08 21:34:03.550 25841-25841 GraphicsEnvironment     com.example.ft                       V  ANGLE GameManagerService for com.example.ft: false
+2025-03-08 21:34:03.552 25841-25841 GraphicsEnvironment     com.example.ft                       V  com.example.ft is not listed in per-application setting
+2025-03-08 21:34:03.554 25841-25841 GraphicsEnvironment     com.example.ft                       V  Neither updatable production driver nor prerelease driver is supported.
+2025-03-08 21:34:03.805 25841-25841 AndroidRuntime          com.example.ft                       D  Shutting down VM
+2025-03-08 21:34:03.814 25841-25841 AndroidRuntime          com.example.ft                       E  FATAL EXCEPTION: main
+                                                                                                    Process: com.example.ft, PID: 25841
+                                                                                                    java.lang.RuntimeException: Unable to create service com.example.ft.FloatingTextService: java.lang.SecurityException: Starting FGS with type systemExempted callerApp=ProcessRecord{e6e681e 25841:com.example.ft/u0a190} targetSDK=34 requires permissions: all of the permissions allOf=true [android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED] any of the permissions allOf=false [android.permission.SCHEDULE_EXACT_ALARM, android.permission.USE_EXACT_ALARM, android:activate_vpn] 
+                                                                                                    	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4664)
+                                                                                                    	at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0)
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2264)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:106)
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:205)
+                                                                                                    	at android.os.Looper.loop(Looper.java:294)
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:8177)
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method)
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552)
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971)
+                                                                                                    Caused by: java.lang.SecurityException: Starting FGS with type systemExempted callerApp=ProcessRecord{e6e681e 25841:com.example.ft/u0a190} targetSDK=34 requires permissions: all of the permissions allOf=true [android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED] any of the permissions allOf=false [android.permission.SCHEDULE_EXACT_ALARM, android.permission.USE_EXACT_ALARM, android:activate_vpn] 
+                                                                                                    	at android.os.Parcel.createExceptionOrNull(Parcel.java:3057)
+                                                                                                    	at android.os.Parcel.createException(Parcel.java:3041)
+                                                                                                    	at android.os.Parcel.readException(Parcel.java:3024)
+                                                                                                    	at android.os.Parcel.readException(Parcel.java:2966)
+                                                                                                    	at android.app.IActivityManager$Stub$Proxy.setServiceForeground(IActivityManager.java:6761)
+                                                                                                    	at android.app.Service.startForeground(Service.java:862)
+                                                                                                    	at com.example.ft.FloatingTextService.onCreate(FloatingTextService.java:85)
+                                                                                                    	at android.app.ActivityThread.handleCreateService(ActivityThread.java:4651)
+                                                                                                    	at android.app.ActivityThread.-$$Nest$mhandleCreateService(Unknown Source:0) 
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2264) 
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:106) 
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:205) 
+                                                                                                    	at android.os.Looper.loop(Looper.java:294) 
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:8177) 
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method) 
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:552) 
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:971) 
+                                                                                                    Caused by: android.os.RemoteException: Remote stack trace:
+                                                                                                    	at com.android.server.am.ActiveServices.validateForegroundServiceType(ActiveServices.java:2611)
+                                                                                                    	at com.android.server.am.ActiveServices.setServiceForegroundInnerLocked(ActiveServices.java:2322)
+                                                                                                    	at com.android.server.am.ActiveServices.setServiceForegroundLocked(ActiveServices.java:1679)
+                                                                                                    	at com.android.server.am.ActivityManagerService.setServiceForeground(ActivityManagerService.java:13281)
+                                                                                                    	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:3385)
+2025-03-08 21:34:03.839 25841-25841 Process                 com.example.ft                       I  Sending signal. PID: 25841 SIG: 9
